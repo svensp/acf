@@ -4,7 +4,7 @@ namespace Corcel\Acf\Field;
 
 use Corcel\Acf\FieldInterface;
 use Corcel\Model\Post;
-use Corcel\Model\Term;
+use Corcel\Model\Term as TermModel;
 use Illuminate\Support\Collection;
 
 /**
@@ -25,7 +25,7 @@ class Term extends BasicField implements FieldInterface
     protected $term;
 
     /**
-     * @param Post|Term $post
+     * @param Post|TermModel $post
      */
     public function __construct($post)
     {
